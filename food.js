@@ -14,5 +14,6 @@ class Food {
     if (snake.checkFoodPositioningCollision()) {
       this.setFood();
     }
+    console.log(this.position);
   }
 }
