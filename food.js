@@ -10,7 +10,7 @@ class Food {
     square(this.position.x * cellSize, this.position.y * cellSize, cellSize)
   }
   setFood() {
-    this.position = createVector(round(random(width / cellSize)), round(random(height / cellSize)));
+    this.position = createVector(floor(random(width / cellSize)), floor(random(height / cellSize)));
     if (snake.checkFoodPositioningCollision()) {
       this.setFood();
     }
